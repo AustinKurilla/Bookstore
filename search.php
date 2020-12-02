@@ -18,8 +18,8 @@
 				<li><a href="search.php">Search</a></li>
 				<li><a href="news.php">News</a></li>
 				<li><a href="user.php">User</a></li>
-				<li><a href="#login">Login</a></li>
-				<li><a href="#contact">Contact Us</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="contact.hmtl">Contact Us</a></li>
 			</ul>
 		</div>
 		<div id="content">
@@ -28,6 +28,11 @@
 				<input type="text" name="query" id="searchbar"/>
 				<input type="submit" value="Search" id="button">
 			</form>
+			<?php
+			if(isset($_GET['query'])){
+				echo "Results for " . htmlspecialchars($_GET["query"]);
+				}
+			?>
 		</div>
 	</div>
 </body>

@@ -18,8 +18,8 @@
 				<li><a href="search.php">Search</a></li>
 				<li><a href="news.php">News</a></li>
 				<li><a href="user.php">User</a></li>
-				<li><a href="#login">Login</a></li>
-				<li><a href="#contact">Contact Us</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
 		</div>
 	</div>

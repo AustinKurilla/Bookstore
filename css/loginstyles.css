@@ -1,3 +1,21 @@
 .header{
 	width:100%;
 }
+#content{
+	display:flex;
+	justify-content:center;
+	align-itmes:center;
+	text-align:center;
+	width:100%;
+	height:80vh;
+	flex-direction:column;
+}
+#user, #pass{
+	height:5vh;
+	margin-bottom:2vh;
+	width:30%;
+	font-size:125%;
+}
+.header{
+	font-size:200%;
+}
