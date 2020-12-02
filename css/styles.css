@@ -8,3 +8,23 @@
 img{
 	box-shadow:0 0 20px rgba(0,0,0,0.8);
 }
+ul{
+	list-style-type:none;
+	overflow:hidden;
+	background-color: #333;
+}
+
+li{
+	float:left;
+}
+li a{
+	display:block;
+	color:white;
+	text-align:center;
+	padding: 2vh 1vw;
+	text-decoration:none;
+}
+
+li a:hover{
+	background-color: #111;
+}
