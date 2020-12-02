@@ -1,7 +1,3 @@
-body{
-	background: #14213D;
-	color: #FCA311;
-}
 img{
 	object-fit:cover;
 	width:100%;
@@ -18,7 +14,6 @@ h1{
 #content{
 	display:flex;
 	width:100%;
-	height:30vh;
 	justify-content:center;
 	text-align:center;
 	align-items:center;
@@ -38,4 +33,14 @@ h2{
 	font-size:200%;
 	margin-bottom:2vh;
 	margin-top:3vh;
+}
+
+@media only screen and (max-width: 800px){
+	#content{
+		flex-direction: column;
+	}
+	.contentbox{
+		width:100%;
+		margin-top:5vh;
+	}
 }

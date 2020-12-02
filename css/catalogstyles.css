@@ -1,4 +1,24 @@
-body{
-	background: #14213D;
-	color: #FCA311;
+#heading{
+	font-size:500%;
+	text-align:center;
+	margin-top:5vh;
+	margin-bottom:2vh;
+}
+#booklist{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+.listitem{
+	width:70%;
+	display:flex;
+	border: 1px solid #FCA311;
+	border-radius:5px;
+	margin-bottom:2vh;
+	font-size:200%;
+	justify-content:space-between;
+}
+.bookyear{
+	color:#e5e5e5;
 }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Austin and Brad Bookstore</title>
+	<title>Catalog</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/indexstyles.css" />
+	<link rel="stylesheet" type="text/css" href="css/searchstyles.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
 </head>
@@ -22,31 +22,10 @@
 				<li><a href="#contact">Contact Us</a></li>
 			</ul>
 		</div>
-		<img src="images/homeheader.jpg" alt="front of a bookstore class="strech"/>
-		<h1>The Brad and Austin Bookstore</h1>
 		<div id="content">
+			<h1>Search</h1>
 			
-			<div class="contentbox">
-				<h3>Address</h3>
-				<p>101 Bookstore Drive</p>
-				<p class="margin">Eau Claire, WI 54701</p>
-				
-				<h3>Phone</h3>
-				<p>(123)-456-7890</p>
-			</div>
-			<div class="contentbox">
-				<h2 class="margin">Store Hours</h2>
-				<p>Mon	8am-4pm</p>
-				<p>Tues	8am-2pm</p>
-				<p>Wed	10am-10pm</p>
-				<p>Thu	8am-4pm</p>
-				<p>Fri	8am-5pm</p>
-				<p>Sat	CLOSED</p>
-				<p>Sun	10am-2pm</p>
-			</div>
 		</div>
-	
-	
 	</div>
 </body>
 </html>

@@ -15,14 +15,62 @@
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="catalog.php">Catalog</a></li>
-				<li><a href="#search">Search</a></li>
+				<li><a href="search.php">Search</a></li>
 				<li><a href="#news">News</a></li>
 				<li><a href="#user">User</a></li>
 				<li><a href="#login">Login</a></li>
 				<li><a href="#contact">Contact Us</a></li>
 			</ul>
 		</div>
-		
+		<div id="content">
+			<h1 id="heading">All Books</h1>
+			<div id="booklist">
+				<div class="listitem">
+					<p class="booktitle">Midnight's Children</p>
+					<p class="bookyear">1981</p>
+				</div>
+				<div class="listitem">
+					<p class="booktitle">In Search of Lost Time</p>
+					<p class="bookyear">1920</p>
+				</div>
+				<div class="listitem">
+					<p class="booktitle">Children of Gebelawi</p>
+					<p class="bookyear">1959</p>
+				</div>
+				<div class="listitem">
+					<p class="booktitle">Crime and Punishment</p>
+					<p class="bookyear">1866</p>
+				</div>
+				<div class="listitem">
+					<p class="booktitle">The Canterbury Tales</p>
+					<p class="bookyear">1450</p>
+				</div>
+				<div class="listitem">
+					<p class="booktitle">Title One</p>
+					<p class="bookyear">2000</p>
+				</div>
+				<div class="listitem">
+					<p class="booktitle">The Stranger</p>
+					<p class="bookyear">1942</p>
+				</div>
+				<div class="listitem">
+					<p class="booktitle">Things Fall Apart</p>
+					<p class="bookyear">1958</p>
+				</div>
+				<div class="listitem">
+					<p class="booktitle">The Hunger Games</p>
+					<p class="bookyear">2010</p>
+				</div>
+				<div class="listitem">
+					<p class="booktitle">Harry Potter and the Deathly Hallows</p>
+					<p class="bookyear">2006</p>
+				</div>
+				<div class="listitem">
+					<p class="booktitle">The Lying Life of Adults</p>
+					<p class="bookyear">2020</p>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
