@@ -1,0 +1,90 @@
+.header{
+	grid-area: header;
+	text-align:center;
+	padding: 10px;
+	border-bottom: solid 4px #e5e5e5;
+	font-size: 300%;	
+}
+
+label{
+	align-items: left;
+	text-align: left;
+}
+
+input[type=fname], select, textarea {
+	font-family: courier;
+	grid-area: fname;
+    padding: 12px;
+	margin-bottom: 5px;
+	width:600px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+input[type=lname], select, textarea {
+	font-family: courier;
+	grid-area: lname;
+    padding: 12px;
+	margin-bottom: 5px;
+	width:600px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+input[type=email], select, textarea {
+	font-family: courier;
+	grid-area: email;
+    padding: 12px;
+	margin-bottom: 5px;
+	width:600px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+input[type=message], select, textarea {
+	font-family: courier;
+	grid-area: message;
+    padding: 12px;
+	height: 100px;
+	width:600px;
+	align-items: top;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #FCA311;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  margin-top: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form1{
+	margin-top:10px;
+	grid-area: form;
+	width: 100%;
+	position: relative;
+	text-align: center;		
+	
+}
+
+.wrapper{
+	display: grid;
+	padding: 20px;
+	text-align: center;
+	border: 10px solid black;
+}
+h4{
+	text-align: center;
+	font-size: 200%;
+	padding: 20px;
+}
+
+
