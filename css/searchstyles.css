@@ -1,0 +1,26 @@
+#searchheading{
+	font-size:400%;
+	text-align:center;
+	margin-bottom:2vh;
+}
+#content{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	padding-top:15vh;
+}
+#searchbar{
+	width:80%;
+	height:5vh;
+	font-size:150%;
+}
+#button{
+	width:10%;
+}
+form{
+	display:flex;
+	justify-content:center;
+	width:60%;
+	font-size:200%;
+}
