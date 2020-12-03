@@ -17,7 +17,7 @@
 				<li><a href="catalog.php">Catalog</a></li>
 				<li><a href="search.php">Search</a></li>
 				<li><a href="news.php">News</a></li>
-				<li><a href="user.php">User</a></li>
+				<li><a href="admin.php">Admin</a></li>
 				<li><a href="login.html">Login</a></li>
 				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
