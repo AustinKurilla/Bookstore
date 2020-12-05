@@ -26,6 +26,7 @@
 			<h2>Insert New Book</h2>
 			<form action="admin.php" method="GET" id="form">
 				<input type="text" name="booktitle" id="booktitle" placeholder="Book Title"/>
+				<input type="text" name="bookauthor" id="bookauthor" placeholder="Book Author"/>
 				<input type="text" name="bookyear" id="bookyear" placeholder="Book Year"/>
 				<input type="submit" value="submit" id="button">
 			</form>
@@ -37,16 +38,16 @@
 					die("Error " . mysqli_connect_error());
 				}
 				
-				if(isset($_GET['booktitle']) && isset($_GET['bookyear'])){
-				$sql = "INSERT INTO books (title, year) VALUES ('" . htmlspecialchars($_GET["booktitle"]) 
-				."','" . htmlspecialchars($_GET["bookyear"]) . "')";
+				if(isset($_GET['booktitle']) && isset($_GET['bookyear']) && isset($_GET['bookyear'])){
+				$sql = "INSERT INTO books (title, author, year) VALUES ('" . htmlspecialchars($_GET["booktitle"]) 
+				."','" . htmlspecialchars($_GET['bookauthor']) .  "','" . htmlspecialchars($_GET["bookyear"]) . "')";
 				if(mysqli_query($link, $sql)){
 					echo "Inserted Successfully";
 				}else{
 					echo "ERROR " . mysqli_error($link);
 				}
 				}
-				$sql2 = "SELECT id, title, year FROM books";
+				$sql2 = "SELECT id, title, author, year FROM books";
 				$result = $link->query($sql2);
 				
 				if($result->num_rows > 0){
@@ -54,8 +55,9 @@
 					while($row = $result->fetch_assoc()){
 						echo "<div class='books'>
 							<p class='title'>" .$row['title'] . "</p>
+							<p class='author'>" .$row['author'] . "</p>
 							<p class='year'>" .$row['year'] . "</p>
-							<form action='admin.php' method='GET' id='form'>
+							<form action='admin.php' method='GET' id='form2'>
 							<input type='submit' value='" .$row['id'] . "' name='delete' class='button'>
 							</form>
 							</div>";

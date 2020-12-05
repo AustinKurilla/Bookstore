@@ -24,3 +24,20 @@ form{
 	width:60%;
 	font-size:200%;
 }
+.listitem{
+	width:70%;
+	display:flex;
+	border: 1px solid #FCA311;
+	border-radius:5px;
+	margin-bottom:2vh;
+	font-size:200%;
+	justify-content:space-between;
+}
+h1{
+	font-size:300%;
+	margin-top:3vh;
+	margin-bottom:2vh;
+}
+.bookauthor{
+	color:#e5e5e5;
+}

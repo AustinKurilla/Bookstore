@@ -29,9 +29,30 @@
 				<input type="submit" value="Search" id="button">
 			</form>
 			<?php
-			if(isset($_GET['query'])){
-				echo "Results for " . htmlspecialchars($_GET["query"]);
+			$link = mysqli_connect('localhost',"root","","books");
+				
+				if($link === false){
+					die("Error " . mysqli_connect_error());
 				}
+			if(isset($_GET['query'])){	
+			$query = htmlspecialchars($_GET['query']);
+			
+			$sql2 = "SELECT title, author, year FROM books WHERE (`title` LIKE '%".$query."%') OR (`author` LIKE '%".$query."%') OR (`year` LIKE '%".$query."%')" or die(mysql_error());
+				$result = $link->query($sql2);
+				
+				if($result->num_rows > 0){
+					echo "<h1 id='header'>Results</h1>";
+					while($row = $result->fetch_assoc()){
+						echo "<div class='listitem'>
+							<p class='booktitle'>" .$row['title'] . "</p>
+							<p class='bookauthor'>" .$row['author'] . "</p>
+							<p class='bookyear'>" .$row['year'] . "</p> </div>";
+					}
+				} else{
+					echo "0 Results";
+				}
+				}
+				mysqli_close($link);
 			?>
 		</div>
 	</div>

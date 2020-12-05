@@ -25,51 +25,29 @@
 		<div id="content">
 			<h1 id="heading">All Books</h1>
 			<div id="booklist">
-				<div class="listitem">
-					<p class="booktitle">Midnight's Children</p>
-					<p class="bookyear">1981</p>
-				</div>
-				<div class="listitem">
-					<p class="booktitle">In Search of Lost Time</p>
-					<p class="bookyear">1920</p>
-				</div>
-				<div class="listitem">
-					<p class="booktitle">Children of Gebelawi</p>
-					<p class="bookyear">1959</p>
-				</div>
-				<div class="listitem">
-					<p class="booktitle">Crime and Punishment</p>
-					<p class="bookyear">1866</p>
-				</div>
-				<div class="listitem">
-					<p class="booktitle">The Canterbury Tales</p>
-					<p class="bookyear">1450</p>
-				</div>
-				<div class="listitem">
-					<p class="booktitle">Title One</p>
-					<p class="bookyear">2000</p>
-				</div>
-				<div class="listitem">
-					<p class="booktitle">The Stranger</p>
-					<p class="bookyear">1942</p>
-				</div>
-				<div class="listitem">
-					<p class="booktitle">Things Fall Apart</p>
-					<p class="bookyear">1958</p>
-				</div>
-				<div class="listitem">
-					<p class="booktitle">The Hunger Games</p>
-					<p class="bookyear">2010</p>
-				</div>
-				<div class="listitem">
-					<p class="booktitle">Harry Potter and the Deathly Hallows</p>
-					<p class="bookyear">2006</p>
-				</div>
-				<div class="listitem">
-					<p class="booktitle">The Lying Life of Adults</p>
-					<p class="bookyear">2020</p>
-				</div>
-			</div>
+				
+			<?php
+				$link = mysqli_connect('localhost',"root","","books");
+				
+				if($link === false){
+					die("Error " . mysqli_connect_error());
+				}
+				$sql2 = "SELECT id, title, author, year FROM books";
+				$result = $link->query($sql2);
+				
+				if($result->num_rows > 0){
+					
+					while($row = $result->fetch_assoc()){
+						echo "<div class='listitem'>
+							<p class='booktitle'>" .$row['title'] . "</p>
+							<p class='bookauthor'>" .$row['author'] . "</p>
+							<p class='bookyear'>" .$row['year'] . "</p> </div>";
+					}
+				} else{
+					echo "0 Results";
+				}
+				mysqli_close($link);
+			?>
 		</div>
 	</div>
 </body>

@@ -1,4 +1,4 @@
-#bookyear, #booktitle{
+#bookyear, #booktitle, #bookauthor{
 	width:50%;
 	height:5vh;
 	font-size:150%;
@@ -27,21 +27,25 @@ h2{
 }
 .books{
 	display:flex;
-	width:60%;
+	width:100%;
 	height:5vh;
 	align-items:center;
 	justify-content:center;
 	font-size:200%;
-	margin-top:2vh;
+	margin-top:4vh;
+	text-align:center;
 }
 .button{
 	height:5vh;
-	width:30%;
+	width:100%;
 }
 .year{
 	margin-left:5vh;
 }
-.title{
-	margin-left:20%;
-	width:50%;
+.author{
+	margin-left:3vw;
+}
+#form2{
+	width:10%;
+	margin-left:3vw;
 }
