@@ -29,6 +29,52 @@
 				<input type="text" name="bookyear" id="bookyear" placeholder="Book Year"/>
 				<input type="submit" value="submit" id="button">
 			</form>
+			
+			<?php
+				$link = mysqli_connect('localhost',"root","","books");
+				
+				if($link === false){
+					die("Error " . mysqli_connect_error());
+				}
+				
+				if(isset($_GET['booktitle']) && isset($_GET['bookyear'])){
+				$sql = "INSERT INTO books (title, year) VALUES ('" . htmlspecialchars($_GET["booktitle"]) 
+				."','" . htmlspecialchars($_GET["bookyear"]) . "')";
+				if(mysqli_query($link, $sql)){
+					echo "Inserted Successfully";
+				}else{
+					echo "ERROR " . mysqli_error($link);
+				}
+				}
+				$sql2 = "SELECT id, title, year FROM books";
+				$result = $link->query($sql2);
+				
+				if($result->num_rows > 0){
+					
+					while($row = $result->fetch_assoc()){
+						echo "<div class='books'>
+							<p class='title'>" .$row['title'] . "</p>
+							<p class='year'>" .$row['year'] . "</p>
+							<form action='admin.php' method='GET' id='form'>
+							<input type='submit' value='" .$row['id'] . "' name='delete' class='button'>
+							</form>
+							</div>";
+					}
+				} else{
+					echo "0 Results";
+				}
+				
+				if(isset($_GET['delete'])){
+					$sql3 = "DELETE FROM books WHERE id='" . htmlspecialchars($_GET['delete']) . "'";
+					if(mysqli_query($link, $sql3)){
+						echo "<br> Deleted </br>";
+					} else{
+						echo "Error " . mysqli_error($link);
+					}
+				}
+				
+				mysqli_close($link);
+			?>
 		</div>
 	</div>
 </body>
