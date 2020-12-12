@@ -30,6 +30,7 @@ session_start();
 				</div>
 				<div>
 				<li><a href="contact.php">Contact Us</a></li>
+				<li><a href="merch.php">Merchandice</a></li>
 				<?php
 				if(!isset($_SESSION['auth'])){
 					echo "<li><a href='login.php'>Login</a></li>";
@@ -46,12 +47,21 @@ session_start();
 			<h1 id="header">Bookstore News!</h1>
 			<div class="article">
 				<div class="bar"></div>
+				<h2 class="title">New Bookclub List Posted!</h2>
+				<p class="author">by Austin Kurilla 12-12-20</p>
+				<div class="imgwrapper">
+					<img class="articleimg" src="images/news3.jpg" alt="Stack of books"/>
+				</div>
+				<p class="story">New Best of 2020 list posted! Head over to the <a href="staffpicks.php" target="_blank"> Staff Picks</a> page to see!</p>
+			</div>
+			<div class="article">
+				<div class="bar"></div>
 				<h2 class="title">Official Opening</h2>
 				<p class="author">by Austin Kurilla 11-29-20</p>
 				<div class="imgwrapper">
 					<img class="articleimg" src="images/news1.jpg" alt="Fireworks"/>
 				</div>
-				<p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat nec ex ac elementum. Cras vel consectetur nibh, et scelerisque nisi. Quisque venenatis tempo</p>
+				<p class="story"> Library website officially up and running! Check out the Catalog to see all of our books! We would like to give thanks to the <a href="https://uwec.bncollege.com/shop/uw-eauclaire/home" target="_blank"> UW Eau Claire Book Store</a> for the inspiration!</p>
 			</div>
 			<div class="article">
 				<div class="bar"></div>
@@ -62,6 +72,7 @@ session_start();
 				</div>
 				<p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat nec ex ac elementum. Cras vel consectetur nibh, et scelerisque nisi. Quisque venenatis tempo</p>
 			</div>
+			
 		</div>
 	</div>
 </body>

@@ -1,0 +1,57 @@
+#content{
+	display:flex;
+	flex-direction:column;
+	text-align:center;
+}
+#content h1{
+	font-size:270%;
+	animation-name: flash;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+#merch{
+	display:flex;
+	flex-direction:column;
+}
+img{
+	max-height:75%;
+	max-width:100%;
+	border-radius:10px;
+}
+.row{
+	display:flex;
+	height:300px;
+}
+.item{
+	width:50%;
+	height:100%;
+	text-align:center;
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	align-items:center;
+}
+@keyframes flash {
+    from {color: #FCA311;}
+    to {color: #e5e5e5;}
+}
+@media only screen and (max-width: 800px){
+	.row{
+		flex-direction:column;
+	}
+	.row{
+		margin-bottom:50%;
+	}
+	.item{
+		width:100%;
+	}
+	.item{
+		margin-bottom:5%;
+	}
+	img{
+		max-width:50%;
+	}
+}

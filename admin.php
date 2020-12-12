@@ -41,6 +41,7 @@ session_start();
 				</div>
 				<div>
 				<li><a href="contact.php">Contact Us</a></li>
+				<li><a href="merch.php">Merchandice</a></li>
 				<?php
 				if(!isset($_SESSION['auth'])){
 					echo "<li><a href='login.php'>Login</a></li>";
@@ -90,7 +91,7 @@ session_start();
 					while($row = $result1->fetch_assoc()){
 						echo "<div class='books'>
 							<p class='from'> Message From - " .$row['firstname'] . " " . $row['lastname'] . " " . $row['email'] . "</p>
-							<p class='message'>" .$row['message'] . "</p>
+							<p class='message' id='message'>" . " " .$row['message'] . "</p>
 							<form action='admin.php' method='GET' id='form2'>
 							<input type='submit' value='" .$row['id'] . "' name='deletemsg' class='button'>
 							</form>

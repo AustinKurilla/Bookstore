@@ -49,3 +49,26 @@ h2{
 	width:10%;
 	margin-left:3vw;
 }
+#message{
+	color:#e5e5e5;
+	margin-left: 2vw;
+}
+@media only screen and (max-width: 800px){
+	.books{
+		font-size:150%;
+	}
+	#button{
+	width:35%;
+	height:70px;
+}
+#bookyear, #booktitle, #bookauthor{
+	width:80%;
+	height:5vh;
+	font-size:150%;
+	margin-bottom:3vh;
+}
+.button{
+	height:5vh;
+	width:100;
+}
+}

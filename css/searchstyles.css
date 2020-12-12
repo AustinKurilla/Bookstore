@@ -32,6 +32,7 @@ form{
 	margin-bottom:2vh;
 	font-size:200%;
 	justify-content:space-between;
+	animation: fadeIn ease 5s;
 }
 h1{
 	font-size:300%;
@@ -40,6 +41,13 @@ h1{
 }
 .bookauthor{
 	color:#e5e5e5;
+}
+#header{
+	animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }
 @media only screen and (max-width: 800px){
 	.listitem{

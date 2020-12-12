@@ -32,6 +32,7 @@ session_start();
 				</div>
 				<div>
 				<li><a href="contact.php">Contact Us</a></li>
+				<li><a href="merch.php">Merchandice</a></li>
 				<?php
 				if(!isset($_SESSION['auth'])){
 					echo "<li><a href='login.php'>Login</a></li>";

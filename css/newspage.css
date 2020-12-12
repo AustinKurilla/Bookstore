@@ -13,6 +13,10 @@
 	align-items:center;
 	text-align:center;
 }
+img{
+	animation: fadeIn ease 5s;
+	border-radius:5px;
+}
 .articleimg{
 	max-height:100%;
 	max-width:100%;
@@ -37,8 +41,15 @@
 .author{
 	margin-bottom:3vh;
 }
+a{
+	color:#e5e5e5;
+}
 .story{
 	margin-top:2vh;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }
 @media only screen and (max-width: 800px){
 	.articleimg{

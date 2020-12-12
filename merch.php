@@ -1,19 +1,16 @@
 <?php
-
-session_start();
+	session_start() ;
 ?>
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title>Catalog</title>
+	<title>Merch</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/catalogstyles.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/merch.css" />
 	<link rel="icon" type="image/png" href="images/favicon.png"/>
 	<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
 </head>
-
 <body>
 	<div id="wrapper">
 		<div id="nav">
@@ -44,33 +41,42 @@ session_start();
 			</ul>
 		</div>
 		<div id="content">
-			<h1 id="heading">All Books</h1>
-			<div id="booklist">
-				
-			<?php
-				$link = mysqli_connect('localhost',"root","","books");
-				
-				if($link === false){
-					die("Error " . mysqli_connect_error());
-				}
-				$sql2 = "SELECT id, title, author, year FROM books";
-				$result = $link->query($sql2);
-				
-				if($result->num_rows > 0){
-					
-					while($row = $result->fetch_assoc()){
-						echo "<div class='listitem'>
-							<p class='booktitle'>" .$row['title'] . "</p>
-							<p class='bookauthor'>" .$row['author'] . "</p>
-							<p class='bookyear'>" .$row['year'] . "</p> </div>";
-					}
-				} else{
-					echo "0 Results";
-				}
-				mysqli_close($link);
-			?>
-			<p>Dont have what your looking for? Maybe try looking on <a href="https://books.google.com/" target="_blank">Google Books</a></p>
+			<h1>Mechandise</h1>
+			<div id="merch">
+				<div class='row'>
+					<div class="item">
+						<img src="images/merch1.jpg" alt="Graphic Sweatshirt">
+						<p>Graphic Sweatshirt</p>
+						<p>$35.99</p>
+					</div>
+					<div class="item">
+						<img src="images/merch2.jpg" alt="Graphic Shirt">
+						<p>Read More Books Shirt</p>
+						<p>$15.00</p>
+					</div>
+				</div>
+				<div class='row'>
+					<div class="item">
+						<img src="images/merch3.jpg" alt="Graphic Shirt">
+						<p>All I need is books Books and Cats shirt</p>
+						<p>$20.00</p>
+					</div>
+					<div class="item">
+						<img src="images/merch4.jpg" alt="Graphic Shirt">
+						<p>I need more Book shirt</p>
+						<p>$15.00</p>
+					</div>
+				</div>
+				<div class='row'>
+					<div class="item">
+						<img src="images/merch5.jpg" alt="Graphic Hat">
+						<p>Books hat</p>
+						<p>$10.00</p>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
+<body>
+
 </body>
 </html>

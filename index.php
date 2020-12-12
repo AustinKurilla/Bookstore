@@ -30,6 +30,7 @@ session_start();
 				</div>
 				<div>
 				<li><a href="contact.php">Contact Us</a></li>
+				<li><a href="merch.php">Merchandice</a></li>
 				<?php
 				if(!isset($_SESSION['auth'])){
 					echo "<li><a href='login.php'>Login</a></li>";
@@ -43,7 +44,7 @@ session_start();
 			</ul>
 		</div>
 		<img src="images/homeheader.jpg" alt="front of a bookstore class="strech"/>
-		<h1>The Brad and Austin Bookstore</h1>
+		<h1>The Austin and Brad Bookstore</h1>
 		<div id="content">
 			
 			<div class="contentbox">
