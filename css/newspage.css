@@ -40,3 +40,8 @@
 .story{
 	margin-top:2vh;
 }
+@media only screen and (max-width: 800px){
+	.articleimg{
+		width:70%;
+	}
+}

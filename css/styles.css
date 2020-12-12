@@ -31,3 +31,21 @@ li a{
 li a:hover{
 	background-color: #111;
 }
+@media only screen and (max-width: 800px){
+	ul{
+		display:flex;
+		flex-direction:column;
+		height:30vh;
+	}
+	li{
+		width:33%;
+		display:flex;
+	}
+	li a{
+		width:100%;
+		height:100%;
+	}
+	ul div{
+		height: 10vh;
+	}
+}

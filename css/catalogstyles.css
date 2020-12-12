@@ -22,3 +22,9 @@
 .bookauthor{
 	color:#e5e5e5;
 }
+@media only screen and (max-width: 800px){
+	.listitem{
+		width:100%;
+		font-size:120%;
+	}
+}
