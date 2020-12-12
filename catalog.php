@@ -1,3 +1,7 @@
+<?php
+
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,13 +17,18 @@
 	<div id="wrapper">
 		<div id="nav">
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li><a href="catalog.php">Catalog</a></li>
 				<li><a href="search.php">Search</a></li>
 				<li><a href="news.php">News</a></li>
-				<li><a href="admin.php">Admin</a></li>
-				<li><a href="login.html">Login</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="login.php">Login</a></li>
+				<li><a href="contact.php">Contact Us</a></li>
+				<?php
+				if(isset($_SESSION['auth'])){
+						echo "<li><a href='admin.php'>Admin</a></li>";
+						echo "<li><a href='logout.php' id='logoutbutton'>Logout</a></li>";
+					}
+				?>
 			</ul>
 		</div>
 		<div id="content">
