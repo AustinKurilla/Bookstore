@@ -1,30 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title>Admin</title>
-	<meta charset="utf-8"/>
+	<title>Bookclub</title>
+	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/userstyles.css"/>
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/bookclubstyles.css" />
+	<link rel="icon" type="image/png" href="images/favicon.png"/>
 	<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
 </head>
-
 <body>
 	<div id="wrapper">
 		<div id="nav">
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li><a href="catalog.php">Catalog</a></li>
 				<li><a href="search.php">Search</a></li>
 				<li><a href="news.php">News</a></li>
-				<li><a href="user.php">User</a></li>
 				<li><a href="login.php">Login</a></li>
 				<li><a href="contact.php">Contact Us</a></li>
+				<?php
+				if(isset($_SESSION['auth'])){
+						echo "<li><a href='admin.php'>Admin</a></li>";
+						echo "<li><a href='logout.php' id='logoutbutton'>Logout</a></li>";
+					}
+				?>
 			</ul>
 		</div>
 		<div id="content">
-			
 		</div>
-	</div>
+<body>
+
 </body>
 </html>

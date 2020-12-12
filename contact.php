@@ -11,6 +11,7 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="css/indexstyles.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="css/contactstyles.css" />
+	<link rel="icon" type="image/png" href="images/favicon.png"/>
 	<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
 </head>
 

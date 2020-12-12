@@ -10,6 +10,7 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/searchstyles.css"/>
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link rel="icon" type="image/png" href="images/favicon.png"/>
 	<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
 </head>
 
